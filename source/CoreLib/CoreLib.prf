@@ -1,0 +1,8 @@
+# dependencies
+include($$PWD/../external/SurfaceMesh/SurfaceMesh.prf)
+
+# this lib
+include($$PWD/../CFG_BUILD.prf)
+LIBS += -L$$PWD/$$BUILD/$$CFG/lib -lCoreLib
+INCLUDEPATH += $$PWD
+DEPENDPATH  += $$PWD

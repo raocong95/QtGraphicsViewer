@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>media/icon.png</file>
+        <file>media/loading.png</file>
+        <file>media/analyze.png</file>
+        <file>shaders/depth_peeling_fragment.glsl</file>
+        <file>shaders/depth_peeling_vertex.glsl</file>
+        <file>shaders/per_vertex_color_lighting_fragment.glsl</file>
+        <file>shaders/per_vertex_color_lighting_vertex.glsl</file>
+        <file>shaders/uniform_color_lighting_fragment.glsl</file>
+        <file>shaders/uniform_color_lighting_vertex.glsl</file>
+        <file>shaders/uniform_color_fragment.glsl</file>
+        <file>shaders/uniform_color_vertex.glsl</file>
+        <file>shaders/per_vertex_color_fragment.glsl</file>
+        <file>shaders/per_vertex_color_vertex.glsl</file>
+        <file>shaders/uniform_color_sphere_fading_fragment.glsl</file>
+        <file>shaders/uniform_color_sphere_fading_vertex.glsl</file>
+    </qresource>
+</RCC>

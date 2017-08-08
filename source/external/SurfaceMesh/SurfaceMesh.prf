@@ -1,0 +1,7 @@
+include($$PWD/../Eigen/Eigen.prf)
+
+# this lib
+include($$PWD/../../CFG_BUILD.prf)
+LIBS += -L$$PWD/$$BUILD/$$CFG/lib -lSurfaceMesh
+INCLUDEPATH += $$PWD $$PWD/surface_mesh
+DEPENDPATH  += $$PWD

@@ -1,0 +1,12 @@
+CONFIG(debug, debug|release) {
+    CFG = debug
+} else {
+    CFG = release
+}
+
+BUILD = .
+win32 { ## Windows common build here
+    contains(QMAKE_TARGET.arch, x86_64) {
+        BUILD = x64
+    }
+}

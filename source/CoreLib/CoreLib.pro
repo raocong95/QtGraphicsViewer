@@ -1,7 +1,7 @@
 #---Not header-only, so have to be precompiled into a library
 TEMPLATE = lib
 CONFIG += staticlib
-
+CONFIG += c++11
 QT += core gui widgets opengl xml
 
 win32 {# Enable debug info in release build

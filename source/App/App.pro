@@ -4,7 +4,7 @@ TARGET      = Rt3DVisionApp
 TEMPLATE    = app
 DESTDIR     = $$PWD/../../bin
 CONFIG(debug, debug|release) {TARGET = Rt3DVisionAppD}
-
+CONFIG += c++11
 # Enable debuging in release mode
 win32 {
     QMAKE_CXXFLAGS_RELEASE += /Zi
@@ -13,6 +13,7 @@ win32 {
 
 # Libraries
 include($$PWD/../CoreLib/CoreLib.prf)
+include($$PWD/../external/SurfaceMesh/SurfaceMesh.prf)
 
 SOURCES += main.cpp\
     MainWindow.cpp \

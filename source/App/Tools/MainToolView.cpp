@@ -10,6 +10,7 @@
 #include <QKeyEvent>
 #include <QFileDialog>
 #include <QDebug>
+#include <QOpenGLWidget>
 
 MainToolView::MainToolView(MainTool* tool)
     :QGraphicsObject(tool), _mainTool(tool)

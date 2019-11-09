@@ -1,6 +1,7 @@
 #---Not header-only, so have to be precompiled into a library
 TEMPLATE = lib
 CONFIG += staticlib
+CONFIG += c++11
 QT += opengl
 
 # Warnings

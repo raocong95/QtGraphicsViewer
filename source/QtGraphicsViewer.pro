@@ -1,7 +1,7 @@
 TEMPLATE = subdirs
-
+CONFIG += c++11
 SUBDIRS += \
-    external\SurfaceMesh \
+    external/SurfaceMesh \
     CoreLib \
     App \
 

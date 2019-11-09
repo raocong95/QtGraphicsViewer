@@ -3,7 +3,7 @@
 #include <QColor>
 #include <QMatrix4x4>
 #include <QTextStream>
-
+#include <QSharedPointer>
 #include <map>
 using namespace std;
 

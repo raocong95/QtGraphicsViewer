@@ -2,12 +2,29 @@
 #include "MeshModel.h"
 
 
+//ShaderRenderer::ShaderRenderer(QVector<QVector3D>& vertices, QVector<QVector4D>& colors)
+//    :ShaderRenderer(vertices, QVector<QVector3D>(), colors){}
+//ShaderRenderer::ShaderRenderer(QVector<QVector3D>& vertices, QVector<QVector3D>& normals)
+//	:ShaderRenderer(vertices, normals, QVector<QVector4D>()){}
+//ShaderRenderer::ShaderRenderer(QVector<QVector3D>& vertices)
+//	: ShaderRenderer(vertices, QVector<QVector3D>(), QVector<QVector4D>()){}
+
 ShaderRenderer::ShaderRenderer(QVector<QVector3D>& vertices, QVector<QVector4D>& colors)
-	:ShaderRenderer(vertices, QVector<QVector3D>(), colors){}
+{
+    QVector<QVector3D> normals;
+    ShaderRenderer(vertices, normals, colors);
+}
 ShaderRenderer::ShaderRenderer(QVector<QVector3D>& vertices, QVector<QVector3D>& normals)
-	:ShaderRenderer(vertices, normals, QVector<QVector4D>()){}
+{
+    QVector<QVector4D> colors;
+    ShaderRenderer(vertices, normals, colors);
+}
 ShaderRenderer::ShaderRenderer(QVector<QVector3D>& vertices)
-	: ShaderRenderer(vertices, QVector<QVector3D>(), QVector<QVector4D>()){}
+{
+    QVector<QVector3D> normals;
+    QVector<QVector4D> colors;
+    ShaderRenderer(vertices, normals, colors);
+}
 ShaderRenderer::ShaderRenderer(QVector<QVector3D>& vertices,
 	QVector<QVector3D>& normals, QVector<QVector4D>& colors)
 {

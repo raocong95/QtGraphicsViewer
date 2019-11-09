@@ -1,1 +1,0 @@
-code for 3d model visualization

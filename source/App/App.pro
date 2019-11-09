@@ -13,6 +13,7 @@ win32 {
 
 # Libraries
 include($$PWD/../CoreLib/CoreLib.prf)
+include($$PWD/../external/SurfaceMesh/SurfaceMesh.prf)
 
 SOURCES += main.cpp\
     MainWindow.cpp \
